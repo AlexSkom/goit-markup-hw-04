@@ -471,14 +471,8 @@ header {
 .footer-social-item {
   width: 40px;
   height: 40px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: #31d0aa;
-}
 .footer-social-link {
   display: flex;
   height: 100%;
@@ -487,6 +481,12 @@ header {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
 }
 .footer-social-icon {
   fill: #f4f4fd;
