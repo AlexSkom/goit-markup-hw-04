@@ -310,9 +310,10 @@ header {
 }
 .team-names {
   margin-bottom: 8px;
+  text-align: center;
 }
-.position,
-.team-names {
+.position {
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -489,5 +490,42 @@ header {
   background-color: #31d0aa;
 }
 .footer-social-icon {
-  fill: #f4f4fd;
+  fill: #fdf4f4;
+}
+
+/* modal-overlay */
+.modal-overlay {
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0;
+  pointer-events: none; */
+  transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  display: flex;
+  background-color: #fcfcfc;
+  padding: 24px;
+  max-width: 408px;
+  height: 584px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
 }
